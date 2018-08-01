@@ -23,6 +23,16 @@ export default class RankItem extends cc.Component {
     }
 
     init(rank, data) {
+        //适配方案
+        if(data.fitHeight)
+        {
+            cc.Canvas.instance.fitHeight =true;
+            cc.Canvas.instance.fitWidth =false;
+        }
+        else{
+            cc.Canvas.instance.fitHeight = false;
+            cc.Canvas.instance.fitWidth = true;
+        }
         let avatarUrl = data.avatarUrl;
         // let nick = data.nickname.length <= 10 ? data.nickname : data.nickname.substr(0, 10) + "...";
         let nick = data.nickname;
