@@ -205,7 +205,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 600,
+      "width": 571,
       "height": 560
     },
     "_rotationX": 0,
@@ -276,7 +276,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 312,
+      "x": 297.5,
       "y": 0
     },
     "_skewX": 0,
@@ -445,7 +445,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 600,
+      "width": 571,
       "height": 560
     },
     "_rotationX": 0,
@@ -544,7 +544,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 600,
+      "width": 571,
       "height": 560
     },
     "_resize": 1,
@@ -796,7 +796,7 @@
       "__id__": 10
     },
     "prefabRankItem": {
-      "__uuid__": "bdcb5597-1ef1-47a0-9f8d-79db921001d6"
+      "__uuid__": "281def50-fe6f-4215-bc98-ff2174a84b43"
     },
     "prefabGameOverRank": {
       "__uuid__": "a2ac8a69-eca6-4432-8016-69008a4626eb"

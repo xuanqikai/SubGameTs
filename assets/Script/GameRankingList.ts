@@ -15,6 +15,7 @@ export default class GameRankingList extends cc.Component {
     gameOverRankLayout: cc.Node = null;
     @property(cc.Node)
     loadingLabel: cc.Node = null;//加载文字
+    
 
     start() {
         this.removeChild();

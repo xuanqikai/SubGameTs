@@ -14,6 +14,10 @@ export default class RankItem extends cc.Component {
     @property(cc.Label)
     topScoreLabel: cc.Label = null;
 
+    //皇冠
+    @property([cc.Sprite])
+    Hat: Array<cc.Sprite> = [];
+
     start() {
 
     }
@@ -40,6 +44,20 @@ export default class RankItem extends cc.Component {
         }
         this.rankLabel.string = (rank + 1).toString();
         this.createImage(avatarUrl);
+        if(this.avatarImgSprite.node.active)
+        {
+            this.avatarImgSprite.node.setScale(1.5);
+            for (let index = 0; index < 3; index++) {
+                if(index==rank)
+                {
+                    this.Hat[index].node.active = true;
+                    this.Hat[index].node.setScale(0.5);
+                }
+                else{
+                    this.Hat[index].node.active = false;
+                }
+            }
+        }
         this.nickLabel.string = nick;
         this.topScoreLabel.string = grade.toString();
     }
