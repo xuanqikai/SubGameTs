@@ -39,7 +39,11 @@ export default class RankItem extends cc.Component {
         let grade = data.KVDataList.length != 0 ? data.KVDataList[0].value : 0;
 
         if (rank % 2 == 0) {
-            this.backSprite.color = new cc.Color(55, 55, 55, 255);
+            // this.backSprite.color = new cc.Color(55, 55, 55, 255);
+            this.backSprite.active = true;
+        }
+        else{
+            this.backSprite.active = false;
         }
 
         if (rank == 0) {
@@ -56,17 +60,18 @@ export default class RankItem extends cc.Component {
         this.createImage(avatarUrl);
         if(this.avatarImgSprite.node.active)
         {
-            this.avatarImgSprite.node.setScale(1.5);
-            for (let index = 0; index < 3; index++) {
-                if(index==rank)
-                {
-                    this.Hat[index].node.active = true;
-                    this.Hat[index].node.setScale(0.5);
-                }
-                else{
-                    this.Hat[index].node.active = false;
-                }
-            }
+            // this.avatarImgSprite.node.setScale(1.5);
+            // for (let index = 0; index < 3; index++) {
+            //     if(index==rank)
+            //     {
+            //         this.Hat[index].node.active = true;
+            //         this.Hat[index].node.setScale(0.5);
+            //     }
+            //     else
+            //     {
+            //         this.Hat[index].node.active = false;
+            //     }
+            // }
         }
         this.nickLabel.string = nick;
         this.topScoreLabel.string = grade.toString();

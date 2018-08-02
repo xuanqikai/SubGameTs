@@ -114,7 +114,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 571,
+      "width": 593,
       "height": 136
     },
     "_rotationX": 0,
@@ -165,9 +165,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "b5XE9Hg9tKQazgA6cG+V+o",
+    "fileId": "64o+gZEIJOx6BaQwwqtBTZ",
     "sync": false
   },
   {
@@ -256,9 +256,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "e04nPgAgVNIYoMsWe7sS7a",
+    "fileId": "29w0zbTZhHgpLo160CwdVN",
     "sync": false
   },
   {
@@ -283,9 +283,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 137,
+      "g": 78,
+      "b": 6,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -305,7 +305,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -237,
+      "x": -253,
       "y": 0
     },
     "_skewX": 0,
@@ -343,9 +343,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "1fjpWU+eZLkKlIG0Ev+EOJ",
+    "fileId": "9fC+k/TChLKY271f42ZgXe",
     "sync": false
   },
   {
@@ -402,7 +402,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -156,
+      "x": -180,
       "y": 0
     },
     "_skewX": 0,
@@ -498,9 +498,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "0biSCfZulAfIPBO91lKMrz",
+    "fileId": "c6nmOm66pHfaaLlfLEZjOc",
     "sync": false
   },
   {
@@ -589,9 +589,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "31Gi++jp1Hz4J9u2OKBPMO",
+    "fileId": "600MLwMxdO9aQBpjKO8IQY",
     "sync": false
   },
   {
@@ -680,9 +680,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "8cnZS3DipIN4W+nlZU82K3",
+    "fileId": "8evnocfUdOc5GZAkVF/giq",
     "sync": false
   },
   {
@@ -694,7 +694,7 @@
     },
     "_enabled": true,
     "_spriteFrame": null,
-    "_type": 0,
+    "_type": 2,
     "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
@@ -715,9 +715,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "9akW7+YKZJO49yHcwf/Hfg",
+    "fileId": "c6b5SKmKtMKKGMvhV9vNXk",
     "sync": false
   },
   {
@@ -755,7 +755,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
+      "width": 180,
       "height": 30
     },
     "_rotationX": 0,
@@ -764,7 +764,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -134,
+      "x": -117,
       "y": 0
     },
     "_skewX": 0,
@@ -790,8 +790,8 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "追风少年",
-    "_N$horizontalAlign": 1,
+    "_N$string": "追风少年追风少年",
+    "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 1
@@ -802,9 +802,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "0eKiiG3z5KIYx9IkfWDlU6",
+    "fileId": "b8a9dfuvVK0o6oy3PIb/T7",
     "sync": false
   },
   {
@@ -837,12 +837,12 @@
     "_cascadeOpacityEnabled": true,
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 1,
+      "x": 0,
       "y": 0.5
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 97,
+      "width": 117,
       "height": 35
     },
     "_rotationX": 0,
@@ -851,7 +851,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 268,
+      "x": 85,
       "y": 0
     },
     "_skewX": 0,
@@ -877,8 +877,8 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "12300",
-    "_N$horizontalAlign": 2,
+    "_N$string": "123000",
+    "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0
@@ -889,9 +889,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "6aFa6iSxhD3LDMSoracw6Y",
+    "fileId": "d8kHdlHRFFdY5MexkqC2fj",
     "sync": false
   },
   {
@@ -903,7 +903,7 @@
     },
     "_enabled": true,
     "backSprite": {
-      "__id__": 5
+      "__id__": 2
     },
     "rankLabel": {
       "__id__": 9
@@ -935,9 +935,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "a2fea53d-356d-41ab-90ae-bb2b9cf4a2ee"
     },
-    "fileId": "7ercVdL5xOh64LP3ftnQ25",
+    "fileId": "49fPh2vRhEq6NyuQWWDlfX",
     "sync": false
   }
 ]

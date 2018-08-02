@@ -182,12 +182,12 @@ export default class GameRankingList extends cc.Component {
                                 var item = cc.instantiate(this.prefabRankItem);
                                 item.getComponent('RankItem').init(i, playerInfo);
                                 this.scrollViewContent.addChild(item);
-                                if (data[i].avatarUrl == userData.avatarUrl) {
-                                    let userItem = cc.instantiate(this.prefabRankItem);
-                                    userItem.getComponent('RankItem').init(i, playerInfo);
-                                    userItem.y = -354;
-                                    this.node.addChild(userItem, 1, 1000);
-                                }
+                                // if (data[i].avatarUrl == userData.avatarUrl) {
+                                //     let userItem = cc.instantiate(this.prefabRankItem);
+                                //     userItem.getComponent('RankItem').init(i, playerInfo);
+                                //     userItem.y = -354;
+                                //     this.node.addChild(userItem, 1, 1000);
+                                // }
                             }
                             if (data.length <= 8) {
                                 let layout = this.scrollViewContent.getComponent(cc.Layout);

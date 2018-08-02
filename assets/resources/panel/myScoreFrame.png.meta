@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "3b812823-ac52-4f07-8f06-cc58afa0b962",
+  "uuid": "35d609f3-fe60-4d16-b870-ce2ba1fdadc0",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "rankBar": {
+    "myScoreFrame": {
       "ver": "1.0.3",
-      "uuid": "ef62f1c0-0939-4722-b573-74d01fa0cf1e",
-      "rawTextureUuid": "3b812823-ac52-4f07-8f06-cc58afa0b962",
+      "uuid": "18ca5718-1c4b-4633-9c88-bb935f42a086",
+      "rawTextureUuid": "35d609f3-fe60-4d16-b870-ce2ba1fdadc0",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -16,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 593,
-      "height": 136,
-      "rawWidth": 593,
-      "rawHeight": 136,
+      "width": 613,
+      "height": 155,
+      "rawWidth": 613,
+      "rawHeight": 155,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
