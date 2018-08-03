@@ -22,23 +22,23 @@ export default class RankItem extends cc.Component {
 
     }
 
-    init(rank, data) {
+    init(rank, data,noBack = false) {
         //适配方案
-        if(data.fitHeight)
-        {
-            cc.Canvas.instance.fitHeight =true;
-            cc.Canvas.instance.fitWidth =false;
-        }
-        else{
-            cc.Canvas.instance.fitHeight = false;
-            cc.Canvas.instance.fitWidth = true;
-        }
+        // if(data.fitHeight)
+        // {
+        //     cc.Canvas.instance.fitHeight =true;
+        //     cc.Canvas.instance.fitWidth =false;
+        // }
+        // else{
+        //     cc.Canvas.instance.fitHeight = false;
+        //     cc.Canvas.instance.fitWidth = true;
+        // }
         let avatarUrl = data.avatarUrl;
         // let nick = data.nickname.length <= 10 ? data.nickname : data.nickname.substr(0, 10) + "...";
         let nick = data.nickname;
         let grade = data.KVDataList.length != 0 ? data.KVDataList[0].value : 0;
 
-        if (rank % 2 == 0) {
+        if (rank % 2 == 0 && !noBack) {
             // this.backSprite.color = new cc.Color(55, 55, 55, 255);
             this.backSprite.active = true;
         }
@@ -46,33 +46,50 @@ export default class RankItem extends cc.Component {
             this.backSprite.active = false;
         }
 
-        if (rank == 0) {
-            this.rankLabel.node.color = new cc.Color(255, 0, 0, 255);
-            this.rankLabel.node.setScale(2);
-        } else if (rank == 1) {
-            this.rankLabel.node.color = new cc.Color(255, 255, 0, 255);
-            this.rankLabel.node.setScale(1.6);
-        } else if (rank == 2) {
-            this.rankLabel.node.color = new cc.Color(100, 255, 0, 255);
-            this.rankLabel.node.setScale(1.3);
+        // if (rank == 0) {
+        //     this.rankLabel.node.color = new cc.Color(255, 0, 0, 255);
+        //     this.rankLabel.node.setScale(2);
+        // } else if (rank == 1) {
+        //     this.rankLabel.node.color = new cc.Color(255, 255, 0, 255);
+        //     this.rankLabel.node.setScale(1.6);
+        // } else if (rank == 2) {
+        //     this.rankLabel.node.color = new cc.Color(100, 255, 0, 255);
+        //     this.rankLabel.node.setScale(1.4);
+        // }
+        for (let index = 0; index < 3; index++) {
+            if(index==rank)
+            {
+                this.Hat[index].node.active = true;
+            }
+            else
+            {
+                this.Hat[index].node.active = false;
+            }
         }
+        if (rank < 3)
+        {
+            this.rankLabel.node.active = false;
+        }
+        // else{
+        //     this.rankLabel.node.setScale(1.4);
+        // }
         this.rankLabel.string = (rank + 1).toString();
         this.createImage(avatarUrl);
-        if(this.avatarImgSprite.node.active)
-        {
-            // this.avatarImgSprite.node.setScale(1.5);
-            // for (let index = 0; index < 3; index++) {
-            //     if(index==rank)
-            //     {
-            //         this.Hat[index].node.active = true;
-            //         this.Hat[index].node.setScale(0.5);
-            //     }
-            //     else
-            //     {
-            //         this.Hat[index].node.active = false;
-            //     }
-            // }
-        }
+        // if(this.avatarImgSprite.node.active)
+        // {
+        //     // this.avatarImgSprite.node.setScale(1.5);
+        //     // for (let index = 0; index < 3; index++) {
+        //     //     if(index==rank)
+        //     //     {
+        //     //         this.Hat[index].node.active = true;
+        //     //         this.Hat[index].node.setScale(0.5);
+        //     //     }
+        //     //     else
+        //     //     {
+        //     //         this.Hat[index].node.active = false;
+        //     //     }
+        //     // }
+        // }
         this.nickLabel.string = nick;
         this.topScoreLabel.string = grade.toString();
     }

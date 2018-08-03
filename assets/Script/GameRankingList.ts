@@ -15,6 +15,9 @@ export default class GameRankingList extends cc.Component {
     gameOverRankLayout: cc.Node = null;
     @property(cc.Node)
     loadingLabel: cc.Node = null;//加载文字
+
+    @property(cc.Sprite)
+    myScoreFrame: cc.Sprite = null;//自己分数背景框
     
 
     start() {
@@ -79,6 +82,7 @@ export default class GameRankingList extends cc.Component {
     }
 
     removeChild() {
+        this.myScoreFrame.node.removeAllChildren();
         this.node.removeChildByTag(1000);
         this.rankingScrollView.node.active = false;
         this.scrollViewContent.removeAllChildren();
@@ -123,12 +127,13 @@ export default class GameRankingList extends cc.Component {
                                 item.getComponent('RankItem').init(i, playerInfo);
                                 this.scrollViewContent.addChild(item);
                                 //自己头像
-                                // if (data[i].avatarUrl == userData.avatarUrl) {
-                                //     let userItem = cc.instantiate(this.prefabRankItem);
-                                //     userItem.getComponent('RankItem').init(i, playerInfo);
-                                //     userItem.y = -354;
-                                //     this.node.addChild(userItem, 1, 1000);
-                                // }
+                                if (data[i].avatarUrl == userData.avatarUrl) {
+                                    this.myScoreFrame.node.removeAllChildren();
+                                    let userItem = cc.instantiate(this.prefabRankItem);
+                                    userItem.getComponent('RankItem').init(i, playerInfo,true);
+                                    // userItem.y = -354;
+                                    this.myScoreFrame.node.addChild(userItem, 1, 1000);
+                                }
                             }
                             if (data.length <= 4) {
                                 let layout = this.scrollViewContent.getComponent(cc.Layout);
