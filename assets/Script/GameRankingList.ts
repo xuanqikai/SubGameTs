@@ -120,7 +120,6 @@ export default class GameRankingList extends cc.Component {
                                 }
                                 return b.KVDataList[0].value - a.KVDataList[0].value;
                             });
-                            // for (let k = 0; k < 10; k++)
                             for (let i = 0; i < data.length; i++) {
                                 var playerInfo = data[i];
                                 var item = cc.instantiate(this.prefabRankItem);

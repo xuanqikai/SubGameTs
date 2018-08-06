@@ -30,6 +30,21 @@ export default class CanvasScript extends cc.Component {
         //显示分辨率比
         let _rateV = cc.director.getVisibleSize().height/cc.director.getVisibleSize().width;
         
+        if(_rateV > _rateR)
+        {
+            _canvas.fitHeight = false;
+            _canvas.fitWidth = true;
+            console.log("winSizeRank: fitWidth");
+            
+        }
+        else
+        {
+            _canvas.fitHeight = true;
+            _canvas.fitWidth = false;
+            console.log("winSizeRank: fitHeight");
+            
+            
+        }
         // _canvas.node.scaleX =cc.director.getVisibleSize().width /(cc.director.getVisibleSize().height/_canvas.designResolution.height * _canvas.designResolution.width);
 
         // _canvas.node.scaleX = cc.director.getVisibleSize().width/_canvas.designResolution.width;
@@ -39,21 +54,21 @@ export default class CanvasScript extends cc.Component {
 
         // console.log("winSizeRank: _rateR: "+_rateR+" _rateV: "+_rateV);
 
-        if(_rateV > _rateR)
-        {
-            console.log("winSizeRank: fitWidth");
-        }
-        else
-        {
-            console.log("winSizeRank: fitHeight");
-            cc.Canvas.instance.node.setScale(cc.Canvas.instance.node.getContentSize().height/cc.Canvas.instance.designResolution.height);
+        // if(_rateV > _rateR)
+        // {
+        //     console.log("winSizeRank: fitWidth");
+        // }
+        // else
+        // {
+        //     console.log("winSizeRank: fitHeight");
+        //     cc.Canvas.instance.node.setScale(cc.Canvas.instance.node.getContentSize().height/cc.Canvas.instance.designResolution.height);
             
-        }
+        // }
         // cc.Canvas.instance.node.setScale(window.sharedCanvas.width/cc.director.getWinSizeInPixels.width);
         // this.backSprite.setScale(window.sharedCanvas.height/cc.Canvas.instance.designResolution.height);
 
         // console.log("winSizeRank: sharedCanvas W: "+window.sharedCanvas.width+" H: "+window.sharedCanvas.height);
-        // console.log("winSizeRank: cc.director.getVisibleSize W: "+cc.director.getVisibleSize.width+" H: "+cc.director.getVisibleSize.height);
+        console.log("winSizeRank: cc.director.getVisibleSize W: "+cc.director.getVisibleSize().width+" H: "+cc.director.getVisibleSize().height);
         
         // // this.backSprite.setScale(window.sharedCanvas.width/cc.Canvas.instance.designResolution.width);
         // // cc.Canvas.instance.node.setScale(cc.Canvas.instance.designResolution);
